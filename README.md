@@ -1,11 +1,18 @@
-# Getting Started
-- Hit run
-- Edit [index.ts](#src/index.ts) and watch it live update!
 
-# Learn More
+## Attachment-Downloader [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/connectai-e/awesome-basescript)
 
-You can learn more in the [Base Extension Development Guide](https://bytedance.feishu.cn/docx/VxhudDXbyo1V7jxAcTbctJQ5nvc) or [多维表格扩展脚本开发指南](https://bytedance.feishu.cn/docx/HazFdSHH9ofRGKx8424cwzLlnZc).
+> 附件批量下载
 
-## Install packages
+![image](https://github.com/ConnectAI-E/BaseScript-AttachmentDownloader/assets/110169811/7c1c4492-18eb-4065-9a02-035f52f35de4)
 
-Install packages in Shell pane or search and add in Packages pane.
+
+### Getting Started
+
+1️⃣ clone deme
+```
+git clone https://github.com/ConnectAI-E/BaseScript-AttachmentDownloader
+pnpm install
+pnpm dev
+```
+2️⃣ 复制 http://localhost:5173/ 到 多维表格 webview 地址
+
