@@ -1,0 +1,1 @@
+{"version":2,"languages":{"nodejs-npm":{"specfileHash":"181694e7bf99a02ea0b17e8a0409196b","lockfileHash":"776ef88dbb0efafa6058848584ace754","guessedImports":["vite","@base-open/web-api","lie","pako","readable-stream","set-immediate-shim","immediate"],"guessedImportsHash":"977eb1001d8ab49eff2eb7fd836174f8"}}}
