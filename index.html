@@ -53,13 +53,20 @@
          <select class="form-select" id="nameType" name="nameType">
            <option value="0">原文件名称</option>
            <option value="1">索引列名称</option>
+           <option value="2">其他字段内容</option>
          </select>
        </li>
+       <li id="nameFieldDisplay" name="nameFieldDisplay">
+        <label for="xField">用于获取文件名的字段</label>
+        <select size="4" class="form-select" aria-label="select" id="nameField" name="nameField">
+            <!--<option value="0">请选择字段</option>-->
+        </select>
+      </li>
        <li>
          <label for="downloadMethod">下载方式:</label>
          <select class="form-select" id="downloadMethod" name="downloadMethod">
            <option value="0">逐个文件下载</option>
-           <option value="1">zip打包下载(2G以内)</option>
+           <option value="1" selected="selected">zip打包下载(2G以内)</option>
          </select>
        </li>
      </ul>
