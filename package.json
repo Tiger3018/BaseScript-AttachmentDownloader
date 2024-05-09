@@ -19,9 +19,12 @@
   },
   "dependencies": {
     "@base-open/web-api": "https://lf3-static.bytednsdoc.com/obj/eden-cn/jjjpceh7nulojvhj/base-open-web-api-0.2.0-alpha.11.tgz",
+    "@lark-base-open/js-sdk": "^0.3.4",
     "bootstrap": "^5.3.0",
+    "file-saver": "^2.0.5",
     "immediate": "^3.3.0",
     "jquery": "^3.7.0",
+    "jszip": "^3.10.1",
     "lie": "^3.3.0",
     "pako": "^2.1.0",
     "readable-stream": "^4.4.2",

@@ -11,7 +11,6 @@
 
 <body>
 
-</div>
   <div id='mask'>
 
     <div class="d-flex justify-content-center">
@@ -38,28 +37,40 @@
        </li>
        <li>
          <label for="xField">字段名（可多选，使用 Ctrl 或 Shift）：</label>
-         <select size="4"  class="form-select" multiple aria-label="multiple select" id="xField" name="xField" multiple="true">
+         <select size="4"  class="form-select" multiple aria-label="multiple select" id="xField" name="xField">
            <!--<option value="0">请选择字段</option>-->
          </select>
-
        </li>
        <li>
-
+         <label for="view">视图名：</label>
+          <select class="form-select" aria-label="Default select" id="view" name="view">
+            <!--option的值根据选择的表格变化 -->
+          </select>
        </li>
-       <!--预留ZIP打包下载方式
+       
        <li>
-         <label for="op">选择下载方式：</label>
-         <select id="type_selection">
-           <option value="single">逐个文件下载</option>
-           <option value="pack">zip打包下载</option>
+         <label for="nameType">文件名方式:</label>
+         <select class="form-select" id="nameType" name="nameType">
+           <option value="0">原文件名称</option>
+           <option value="1">索引列名称</option>
          </select>
-         </div>
        </li>
-       -->
+       <li>
+         <label for="downloadMethod">下载方式:</label>
+         <select class="form-select" id="downloadMethod" name="downloadMethod">
+           <option value="0">逐个文件下载</option>
+           <option value="1">zip打包下载(2G以内)</option>
+         </select>
+       </li>
      </ul>
    </form>
    <button  type="button" class="btn btn-primary" id="btn">下载</button>
-   <p id="mystatus"></p>
+    <div id="status-area">
+      <p id="qty"></p>
+      <p id="info"></p>
+    </div>
+ 
+  
   </main>
 <div class='tips'>
 
@@ -68,13 +79,13 @@
         <li><span class='dot'></span> 调用浏览器原生下载功能，若浏览器提示下载多个文件时，请选择「允许」</li>
         <li><span class='dot'></span> 需要有附件下载权限，使用时请确保拥有权限</li>
         <li><span class='dot'></span> 下载路径为浏览器默认下载路径；下载时，使用附件的原始文件名，若出现重名，浏览器将自动添加后缀做区分</li>
-        <li><span class='dot'></span> 多维表格新增数据表或字段时，请重新运行本工具</li>
+        <li><span class='dot'></span> 多维表格新增数据表、视图或字段时，请重新运行本工具</li>
+        <li><span class='dot'></span> Zip打包功能使用了JSZip插件，大数据响应体验较慢，当前仅作代码交流学习用。大文件时，请使用逐个下载模式。</li>
       </ol>
   
 </div>
- 
-  
-  <!--预留使用jszip打包下载方式
+  <script type="module" src="/src/index.ts"></script>
+  <!--
   <script src="/src/jszip.js"></script>
   <script src="/src/FileSaver.js"></script>
   -->
